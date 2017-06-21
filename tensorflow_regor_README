@@ -1,0 +1,9 @@
+##To work with Tensorflow 1.0.1 on Regor:
+
+srun -p gpu --x11=all -n1 -N1 --pty --preserve-env --mpi=none  /bin/bash
+## Login with your password; then
+unset PYTHONPATH  
+export PATH="/dios/shared/apps/anaconda/bin:$PATH"
+
+## You can now readily launch python scripts using Tensorflow-GPU (don't forget to import)
+import tensorflow as tf
